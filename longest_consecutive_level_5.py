@@ -1,4 +1,7 @@
-def longestConsecutive(self, A):
+class Solution:
+    # @param A : tuple of integers
+    # @return an integer
+    def longestConsecutive(self, A):
         numbers = dict()
         count = 0
         n = len(A)
@@ -16,5 +19,4 @@ def longestConsecutive(self, A):
                     count = curr_val - A[num]
 
         return count
-
-print longestConsecutive([1, 9, 3, 10, 4, 20, 2, 12,13,14,15,16,17])
+#print longestConsecutive([1, 9, 3, 10, 4, 20, 2, 12,13,14,15,16,17])
